@@ -1,0 +1,68 @@
+1) What is Selenium? What are the different Selenium components? Explain about Selenium Webdriver.
+     -Selenium
+            * Selenium is a free open source automated testinf framework used to validate web applications
+               across different browsers and platforms.
+     -Selenium Components
+            *Selenium IDE
+            *Selenium RC
+            *Selenium Wrbdriver
+            *Selenium grid
+     -Selenium Webdriver
+            *Selenium Webdriver is successor to Selenium RC.
+            *It is a web framework that permits you to execute cross-browser tests.
+            *This tool is used for automating web-based application testing to verify that it performs expectedly.
+
+2) How does Selenium communicate with the Web browsers?
+     -Selenium scripts creates an HTTP Request for each selenium command and send it to the browser driver.
+     -An HTTP request is then sent to the server using Browser Driver.
+     -The steps are executed on the HTTP server.
+
+3.What are the locators available  to find an element using Selenium?
+     -id(find.element.By.id)
+     -name(find.element.By.name)
+     -className(find.element.By.className)
+     -tagName(find.element.By.tagName)
+     -linkText(find.element.By.linkText)
+     -partialLinkText(find.element.By.partialLinkText)
+     -CSS selector
+     -xpath(find.element.By.xpath)
+
+4. Why ID is preferable than X-Path?
+     -This is because ID is considered as unique key so there cannot be one element for same ID
+     -while Xpath is created using relative path or position of elements,
+       so there can be cases when we can get 2 or more elements for same xpath.
+
+5.How to select value in dropdown?
+     -selectByVisibleText() ------selects the option that displays the text matching the parameter
+     -selectByValue()          ------selects the option whose value attribute matches the specified parameter
+     -selectByIndex()          ------selects  the option at the given index
+
+6) What is the difference between Absolute Path and Relative Path?
+     -Absolute xpath   
+           *It starts with / symbol
+           *starts from the rootnode. If there is any change in attributes beginning from root to the element, absolute xpath will become invalid.
+           *Syntax (/html/body/tagName/....)
+     -Relative xpath
+           *It starts with //
+           *starts from the current node. 
+           *Syntax (//tagName[@Attribute='AttributeValue'])
+7) How to verify if the given check box is checked or not (it is not taught but you can explore) Try here: http://leafground.com/pages/checkbox.html
+      -Select the checkbox using DOM method such as getElementById()
+      -Then, access the checked property of the checkbox element.
+      -If it is checked property is true then the checkbox is checked.
+      
+8)Difference between System.setProperty and WebDriverManager
+      -System.setProperty
+             *It implies that it sets the system property 'propertyName' to have the value.
+             *Selenium make use of setProperty method because the browser doesn't have a built-in-server to the automation code
+      -WebDriver Manager
+             *It automates the browser setup in the Selenium code.
+             *We have to add dependency for WebDriverManager incase the code belongs to the Maven environment.  
+
+9) Write the syntax for preceding and following x-paths.
+      -The preceding axis selects all nodes that comes before the current node.
+      -//tagName[@AttributeName='AttributeValue']//preceding::tagName[value]
+  
+10) How to get an attribute value using Selenium WebDriver?
+      -The getAttribute() method is used to obtain the value of an attribute in an html document.
+      -String value =driver.findElement(By.id("Web element id")).getAttribute("Attribute name")

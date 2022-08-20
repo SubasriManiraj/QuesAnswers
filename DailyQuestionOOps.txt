@@ -1,0 +1,66 @@
+1.What is oops stands for?
+    - OOPS stands for Object Oriented Programming 
+    - It is about creating objects that contain both data and methods.
+
+2.What is Polymorphism? explain types?
+    -It refers to the ability of a class to provide different implementations of a method,
+     depending on the type of object that is passed to the method.
+    - Types of Polymorphism
+           * Runtime polymorphism
+                 - Method Overriding is an example of runtime polymorphism.
+                 - When a subclass has same method as the parent class.
+           * Compiletime Polymorphism
+                 -Method Overloading is an example of compiletime polymorphism.
+                 -When two or more methods in the same class have the same name but different parameters,
+                   it is called as overloading. 
+     
+3.what is interface and example in selenium, java?
+      -It is defined as an abstract type used to specify the behavior of a class.
+      -It is a blueprint of a class.
+      -Example
+           *Java          -   AndriodDesign design=new SamsungPhone
+           *Selenium  -  WebDriver driver=new ChromeDriver();  
+         
+4.what is abstarct class and example?
+      -A class which is declared as abstract is known as abstract class.
+      -It is a restricted class that cannot be used to create objects, to access it, it must be inherited from another class.
+      -It has unimplemented  and partially implemented methods
+      -Example -  abstract class Bike  {     }
+
+5.Difference between multiple inheritance and multilevel inheritance
+       -Multiple Inheritance
+               * Multiple inheritance is an inheritance type where a class inherits from more than one base class.
+               * It is not possible within the class level in java.
+       -Multilevel Inheritance
+               * Multilevel inheritance is an inheritance type that inherits from a derived class, a base class for a new class.
+               * It is widely used in java.
+
+6.Is multiple inheritance possible in java?
+       - No, Multiple inheritance is not possible within the class level in java.
+       - Because it creates ambuigity problem.
+
+7.What is keyword for using inheritance  
+       -extends keyword is used for inheritance.
+
+8.what is the keyword to connect interface and class
+       -implements keyword is used to connect interface and class.
+
+9.what is difference between class and interface
+       -Class
+              *Class can instantiate variable and create object
+              *Class can contain concrete methods
+              *The access modifiers used with classes are private, protected and public.
+       -Interface
+              * Interface can't instantiate variable and create an object.
+              *Interface can't contain concrete methods
+              *In interface only public modifier is used.
+
+10.what is difference between class and abstract class
+        -Class
+              *A concrete class is not declared using abstract modifier.
+              *It cannot contain abstract method.
+              *It can be declared as final.
+        -Abstract Class
+              *An Abstract class is declared using abstract modifier.
+              *It may or may not contains abstract method.
+              *It cannot be declared as final.
